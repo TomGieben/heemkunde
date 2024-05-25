@@ -4,7 +4,7 @@
         alt="example placeholder" style="width: 300px;" id="preview" class="rounded"/>
     </div>
     <div class="d-flex justify-content-center">
-        <div class="btn btn-primary btn-rounded">
+        <div class="btn btn-outline-dark btn-rounded">
             <label class="form-label m-1" for="image">
                 <i class="fas fa-upload"></i> Upload afbeelding
             </label>

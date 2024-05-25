@@ -5,7 +5,7 @@
     <div class="col-auto">
         @yield('header-buttons')
         <a class="btn btn-outline-light rounded-pill" href="@yield('back')" title="Terug">
-            <i class="fas fa-times"></i>
+            <i class="fas fa-arrow-left"></i>
         </a>
     </div>
 </div>

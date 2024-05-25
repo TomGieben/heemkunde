@@ -9,3 +9,7 @@
 
 // Components
 @import 'components/news-card';
+
+body {
+    overflow-x: hidden !important;
+}

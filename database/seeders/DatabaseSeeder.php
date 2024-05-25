@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Setting;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -13,11 +14,19 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        $this->settings();
+    }
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+    public function settings(): void
+    {
+        $settings = config('settings');
+
+        foreach ($settings as $setting) {
+            if(Setting::where('key', $setting['key'])->exists()) {
+                continue;
+            }
+
+            Setting::create($setting);
+        }
     }
 }

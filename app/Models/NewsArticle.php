@@ -15,6 +15,7 @@ class NewsArticle extends Model implements HasMedia
     use HasFactory, SoftDeletes, InteractsWithMedia;
 
     protected $fillable = [
+        'user_id',
         'title', 
         'slug', 
         'content', 
@@ -34,6 +35,16 @@ class NewsArticle extends Model implements HasMedia
 
     public function author(): BelongsTo
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function getThumbnailUrl(): string
+    {
+        return $this->getFirstMediaUrl('news_article_images', 'thumb') ?? '';
+    }
+
+    public function getImageUrl(): string
+    {
+        return $this->getFirstMediaUrl('news_article_images') ?? '';
     }
 }

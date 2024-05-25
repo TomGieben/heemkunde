@@ -3,8 +3,9 @@
         <h3 class="mt-2 ms-1 text-white">@yield('title')</h3>
     </div>
     <div class="col-auto">
-        <a class="btn btn-outline-light rounded-pill" href="{{ url()->previous() }}" title="Back">
-            <i class="fas fa-times text-white"></i>
+        @yield('header-buttons')
+        <a class="btn btn-outline-light rounded-pill" href="@yield('back')" title="Terug">
+            <i class="fas fa-times"></i>
         </a>
     </div>
 </div>

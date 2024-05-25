@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/5e3d25cf7b.js" crossorigin="anonymous"></script>
 
     <!-- TinyMCE -->
-    {{-- <script src="https://cdn.tiny.cloud/1/2ciqnzhhumvsf49gri8how5pb5jckrbjakiyp31ksblg7iun/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> --}}
+    <script src="https://cdn.tiny.cloud/1/2ciqnzhhumvsf49gri8how5pb5jckrbjakiyp31ksblg7iun/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
     <!-- Swal -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -39,6 +39,8 @@
             </div>
         </div>
     </div>
+
+    @stack('footer-scripts')
 </body>
 
 </html>

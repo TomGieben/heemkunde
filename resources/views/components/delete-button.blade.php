@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-danger  @if($small) btn-sm m-0 @endif" onclick="showConfirmationModal('{{ $route }}')">
+<button type="button" class="btn btn-outline-danger  @if($small) btn-sm m-0 @endif" onclick="showConfirmationModal('{{ $route }}')">
     <i class="fas fa-trash"></i> @if(!$small) Verwijder @endif
 </button>
 @push('footer-scripts')

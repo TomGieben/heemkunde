@@ -3,7 +3,7 @@
         <span class="fs-4">{{ config('app.name', 'Laravel') }}</span>
     </a>
     <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
+    <ul class="nav nav-pills flex-column">
         <li class="nav-item">
             <a href="{{ route('admin.home') }}" class="nav-link @if (request()->routeIs('admin.home')) active text-white @else text-dark @endif">
                 <i class="fas fa-home"></i>
@@ -28,10 +28,19 @@
                 Teksten
             </a>
         </li>
+    </ul>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
         <li>
             <a href="{{ route('admin.settings.index') }}" class="nav-link @if (request()->routeIs('admin.settings.index')) active text-white @else text-dark @endif">
                 <i class="fas fa-cogs"></i>
                 Instellingen
+            </a>
+        </li>
+        <li>
+            <a href="{{ route('admin.users.index') }}" class="nav-link @if (request()->routeIs('admin.users.index')) active text-white @else text-dark @endif">
+                <i class="fas fa-users"></i>
+                Gebruikers
             </a>
         </li>
     </ul>

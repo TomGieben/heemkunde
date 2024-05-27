@@ -3,23 +3,10 @@
 return [
     [
         'name' => 'Applicatie naam',
+        'description' => 'De naam van de applicatie',
         'type' => 'text',
         'key' => 'app_name',
         'value' => '',
-        'is_editable' => true,
-    ],
-    [
-        'name' => 'Primaire kleur',
-        'type' => 'color',
-        'key' => 'primary_color',
-        'value' => '#000000',
-        'is_editable' => true,
-    ],
-    [
-        'name' => 'Secundaire kleur',
-        'type' => 'color',
-        'key' => 'secondary_color',
-        'value' => '#000000',
         'is_editable' => true,
     ],
 ];

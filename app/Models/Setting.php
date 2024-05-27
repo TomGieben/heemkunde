@@ -12,6 +12,7 @@ class Setting extends Model
 
     protected $fillable = [
         'name',
+        'description',
         'type',
         'key', 
         'value',
@@ -23,8 +24,16 @@ class Setting extends Model
         'is_editable' => 'boolean',
     ];
 
+    public function scopeWhereIsEditable($query)
+    {
+        return $query->where('is_editable', true);
+    }
+
     public static function getByKey(string $key): ?string
     {
-        return self::where('key', $key)->first()?->value;
+        $value = self::where('key', $key)->first()?->value;
+
+
+        return !empty($value) ? $value : null;
     }
 }

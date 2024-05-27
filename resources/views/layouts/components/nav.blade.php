@@ -28,6 +28,12 @@
                 Teksten
             </a>
         </li>
+        <li>
+            <a href="{{ route('admin.settings.index') }}" class="nav-link @if (request()->routeIs('admin.settings.index')) active text-white @else text-dark @endif">
+                <i class="fas fa-cogs"></i>
+                Instellingen
+            </a>
+        </li>
     </ul>
     <hr>
     <div class="dropdown">

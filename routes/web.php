@@ -1,11 +1,11 @@
 <?php
 
-use App\Http\Controllers\CommentController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\NewsArticleController;
-use App\Http\Controllers\SettingController;
-use App\Http\Controllers\TextController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\Admin\CommentController;
+use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\NewsArticleController;
+use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\Admin\TextController;
+use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {

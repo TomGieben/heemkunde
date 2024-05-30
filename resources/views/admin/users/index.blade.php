@@ -16,10 +16,6 @@
                     Op deze pagina kunt u gebruikers beheren. Gebruikers kunnen toegang hebben tot gevoelige informatie.
                 </p>
                 <hr class="my-4" />
-                <strong class="mb-0">Algemeen</strong>
-                <p>
-                    De algemene instellingen van de website hebben betrekking op de website zelf.
-                </p>
                 <div class="list-group mb-5">
                     @foreach ($users as $user)
                         <div class="list-group-item">

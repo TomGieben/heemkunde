@@ -12,4 +12,40 @@
 
 body {
     overflow-x: hidden !important;
+    background-color: #eff0f2 !important;
+}
+
+.card {
+    border: none !important;
+
+    .card-header {
+        background-color: white;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .card-body {
+        background-color: white;
+    }    
+}
+
+.nav-link {
+    color: hsla(0, 0%, 100%, .7) !important;
+
+    &:hover {
+        color: hsl(0, 0%, 100%) !important;
+    }
+
+    &.active {
+        background-color: hsla(0, 0%, 100%, .1) !important;
+        border-left: 3px solid $secondary !important;
+        color: #fff !important;
+    }
+}
+
+.list-group-item {
+    background-color: white !important;
+}
+
+.btn {
+    border-radius: 4rem !important;
 }

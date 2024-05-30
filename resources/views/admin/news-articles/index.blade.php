@@ -9,7 +9,18 @@
 @endsection
 
 @section('content')
-    @foreach ($newsArticles as $article)
-        <x-news-article-admin-card :article="$article" />
-    @endforeach
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+            <div class="my-4">
+                <p>
+                    Hier kunt u de nieuws artikelen van de website aanpassen. De aanpassingen zullen direct zichtbaar zijn op de website.
+                </p>
+                <hr class="my-4" />
+            </div>
+
+            @foreach ($newsArticles as $article)
+                <x-news-article-admin-card :article="$article" />
+            @endforeach
+        </div>
+    </div>
 @endsection

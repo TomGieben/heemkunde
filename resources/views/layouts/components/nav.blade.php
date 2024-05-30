@@ -1,52 +1,52 @@
-<div class="d-flex flex-column flex-shrink-0 p-3 bg-light h-100" style="width: 280px;">
-    <a href="{{ route('admin.home') }}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-primary h-100" style="width: 280px;">
+    <a href="{{ route('admin.home') }}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-light text-decoration-none">
         <span class="fs-4">{{ config('app.name', 'Laravel') }}</span>
     </a>
-    <hr>
+    <hr class="text-white" />
     <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-            <a href="{{ route('admin.home') }}" class="nav-link @if (request()->routeIs('admin.home')) active text-white @else text-dark @endif">
+            <a href="{{ route('admin.home') }}" class="nav-link text-white @if (request()->routeIs('admin.home')) active @endif">
                 <i class="fas fa-home"></i>
                 Home
             </a>
         </li>
         <li>
-            <a href="{{ route('admin.news-articles.index') }}" class="nav-link @if (request()->routeIs('admin.news-articles.index')) active text-white @else text-dark @endif">
+            <a href="{{ route('admin.news-articles.index') }}" class="nav-link text-white @if (request()->routeIs('admin.news-articles.*')) active @endif">
                 <i class="fas fa-newspaper"></i>
                 Nieuws artikelen
             </a>
         </li>
         <li>
-            <a href="{{ route('admin.comments.index') }}" class="nav-link @if (request()->routeIs('admin.comments.index')) active text-white @else text-dark @endif">
+            <a href="{{ route('admin.comments.index') }}" class="nav-link text-white @if (request()->routeIs('admin.comments.*')) active @endif">
                 <i class="fas fa-comments"></i>
                 Reacties
             </a>
         </li>
         <li>
-            <a href="{{ route('admin.texts.index') }}" class="nav-link @if (request()->routeIs('admin.texts.index')) active text-white @else text-dark @endif">
+            <a href="{{ route('admin.texts.index') }}" class="nav-link text-white @if (request()->routeIs('admin.texts.*')) active @endif">
                 <i class="fas fa-text-size"></i>
                 Teksten
             </a>
         </li>
     </ul>
-    <hr>
+    <hr class="text-white" />
     <ul class="nav nav-pills flex-column mb-auto">
         <li>
-            <a href="{{ route('admin.settings.index') }}" class="nav-link @if (request()->routeIs('admin.settings.index')) active text-white @else text-dark @endif">
-                <i class="fas fa-cogs"></i>
-                Instellingen
-            </a>
-        </li>
-        <li>
-            <a href="{{ route('admin.users.index') }}" class="nav-link @if (request()->routeIs('admin.users.index')) active text-white @else text-dark @endif">
+            <a href="{{ route('admin.users.index') }}" class="nav-link text-white @if (request()->routeIs('admin.users.*')) active @endif">
                 <i class="fas fa-users"></i>
                 Gebruikers
             </a>
         </li>
+        <li>
+            <a href="{{ route('admin.settings.index') }}" class="nav-link text-white @if (request()->routeIs('admin.settings.*')) active @endif">
+                <i class="fas fa-cogs"></i>
+                Instellingen
+            </a>
+        </li>
     </ul>
-    <hr>
+    <hr class="text-white" />
     <div class="dropdown">
-        <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+        <a href="#" class="d-flex align-items-center link-light text-decoration-none dropdown-toggle"
             id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
             <strong>{{ auth()->user()->name }}</strong>
         </a>

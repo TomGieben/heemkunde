@@ -33,7 +33,7 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
-<body class="bg-white">
+<body>
     <div class="row" style="min-height: 100vh;">
         <div class="col-auto">
             @include('layouts.components.nav')

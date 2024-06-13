@@ -6,11 +6,10 @@ use App\Http\Controllers\Admin\NewsArticleController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\TextController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/', [WelcomeController::class, 'welcome'])->name('welcome');
 
 Auth::routes();
 

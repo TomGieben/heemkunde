@@ -1,6 +1,6 @@
 <div class="container my-5 py-5">
     <div class="row d-flex justify-content-center">
-        <div class="card">
+        <div class="card bg-white">
             <div class="card-body p-4">
                 <h4 class="mb-4 pb-2">Reacties</h4>
 

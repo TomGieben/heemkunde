@@ -18,6 +18,12 @@
                     <a class="nav-link px-2 text-muted" href="{{ route('news') }}">
                         <span class="text-dark">Nieuws</span>
                     </a>
+                    <a class="nav-link px-2 text-muted" href="{{ route('collection') }}">
+                        <span class="text-dark">Collectie</span>
+                    </a>
+                    <a class="nav-link px-2 text-muted" href="{{ route('about') }}">
+                        <span class="text-dark">Over ons</span>
+                    </a>
                 </li>
             </ul>
         </div>

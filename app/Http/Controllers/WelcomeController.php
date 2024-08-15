@@ -9,7 +9,7 @@ class WelcomeController extends Controller
 {
     public function welcome()
     {
-        $newsArticles = NewsArticle::all();
+        $newsArticles = NewsArticle::latest()->take(3)->get();
 
         return view('welcome', [
             'newsArticles' => $newsArticles,
@@ -28,9 +28,21 @@ class WelcomeController extends Controller
     public function article(string $news)
     {
         $article = NewsArticle::where('slug', $news)->firstOrFail();
+        $related = NewsArticle::where('slug', '!=', $news)->latest()->take(3)->get();
 
         return view('article', [
             'article' => $article,
+            'related' => $related,
         ]);
+    }
+
+    public function collection()
+    {
+        return view('collection');
+    }
+
+    public function about()
+    {
+        return view('about');
     }
 }

@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [WelcomeController::class, 'welcome'])->name('welcome');
 Route::get('/nieuws', [WelcomeController::class, 'news'])->name('news');
 Route::get('/nieuws/{article}', [WelcomeController::class, 'article'])->name('article');
+Route::get('/collectie', [WelcomeController::class, 'collection'])->name('collection');
+Route::get('/over-ons', [WelcomeController::class, 'about'])->name('about');
 
 Auth::routes();
 

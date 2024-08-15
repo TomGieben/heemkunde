@@ -28,37 +28,10 @@
                 <div class="col-md-4">
                     <div class="position-sticky" style="top: 2rem;">
                         <div class="p-4 mb-3 bg-light rounded">
-                            <h4 class="fst-italic">Meer activiteiten</h4>
-                            <a href="https://gildedagoeffelt.nl/programma/zondag-gildedag" class="event-card-small">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img class="rounded w-100 m-1 img-article" loading="lazy"
-                                            src="https://gildedagoeffelt.nl/storage/100/ea_2808_1505_01.jpg"
-                                            alt="Wat is bodemisolatie?">
-                                    </div>
-                                    <div class="col-8 my-auto">
-                                        <div class="m-1 d-flex flex-column">
-                                            <span class="h5">Zondag - Gildedag</span>
-                                            <span>2 maanden geleden</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a> <a href="https://gildedagoeffelt.nl/programma/zaterdag-schietcompetitie"
-                                class="event-card-small">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img class="rounded w-100 m-1 img-article" loading="lazy"
-                                            src="https://gildedagoeffelt.nl/storage/168/thumbnail_koningsdag-(37).jpg"
-                                            alt="Wat is bodemisolatie?">
-                                    </div>
-                                    <div class="col-8 my-auto">
-                                        <div class="m-1 d-flex flex-column">
-                                            <span class="h5">Zaterdag - Schietcompetitie</span>
-                                            <span>1 maand geleden</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                            <h4 class="fst-italic">Gerelateerde artikelen</h4>
+                            @foreach ($related as $relatedArticle)
+                                <x-news-article-card-small :newsArticle="$relatedArticle" />
+                            @endforeach
                         </div>
                     </div>
                 </div>

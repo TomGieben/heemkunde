@@ -15,4 +15,13 @@ class WelcomeController extends Controller
             'newsArticles' => $newsArticles,
         ]);
     }
+
+    public function article(string $news)
+    {
+        $article = NewsArticle::where('slug', $news)->firstOrFail();
+
+        return view('article', [
+            'article' => $article,
+        ]);
+    }
 }

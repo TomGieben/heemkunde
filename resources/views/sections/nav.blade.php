@@ -1,6 +1,6 @@
-<nav class="navbar navbar-light bg-secondary">
-    <div class="container-fluid py-2">
-        <a class="navbar-brand text-dark" href="/">
+<nav class="navbar navbar-dark bg-primary">
+    <div class="container py-2">
+        <a class="navbar-brand text-white" href="/">
             {{-- <img src="{{ asset('images/logo.png') }}" alt="Logo van {{ config('app.name', 'Laravel') }}"
                 class="d-inline-block align-text-top" style="height: 30px;"> --}}
             {{ config('app.name', 'Laravel') }}
@@ -13,7 +13,7 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a href="" class="nav-link px-2 text-muted">
-                        <span class="text-dark">Welkom</span>
+                        <span class="text-white">Welkom</span>
                     </a>
                 </li>
             </ul>

@@ -27,9 +27,9 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
-<body class="bg-white">
+<body>
     @include('sections.nav')
-    <main style="min-height: 80vh;" class="py-2">
+    <main style="min-height: 80vh;">
         @yield('content')
     </main>
     @include('sections.footer')

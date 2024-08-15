@@ -33,7 +33,8 @@ class Comments extends Component
             'content' => 'required|string',
         ]);
 
-        $this->newsArticle->comments()->create([
+        Comment::create([
+            'news_article_id' => $this->newsArticle->id,
             'author_name' => $this->authorName,
             'author_email' => $this->authorEmail,
             'content' => $this->content,

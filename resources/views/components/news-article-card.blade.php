@@ -1,4 +1,4 @@
-<a href="{{ route('article.show', [$newsArticle->slug]) }}" class="news-card">
+<a href="{{ route('article', [$newsArticle->slug]) }}" class="news-card">
     <div class="card mb-4 box-shadow">
         <img class="card-img-top" data-src="{{ $newsArticle->getImageUrl() }}" alt="{{ $newsArticle->title }}" src="{{ $newsArticle->getImageUrl() }}" data-holder-rendered="true">
         <div class="card-body">

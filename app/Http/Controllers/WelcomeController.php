@@ -16,6 +16,15 @@ class WelcomeController extends Controller
         ]);
     }
 
+    public function news()
+    {
+        $newsArticles = NewsArticle::all();
+
+        return view('news', [
+            'newsArticles' => $newsArticles,
+        ]);
+    }
+
     public function article(string $news)
     {
         $article = NewsArticle::where('slug', $news)->firstOrFail();

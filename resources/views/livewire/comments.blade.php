@@ -2,7 +2,7 @@
     <div class="row d-flex justify-content-center">
         <div class="card">
             <div class="card-body p-4">
-                <h4 class="text-center mb-4 pb-2">Reacties</h4>
+                <h4 class="mb-4 pb-2">Reacties</h4>
 
                 @if ($comments->isEmpty())
                     <p class="text-center">Er zijn nog geen reacties geplaatst.</p>

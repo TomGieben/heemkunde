@@ -23,6 +23,12 @@
             </a>
         </li>
         <li>
+            <a href="{{ route('admin.contact-messages.index') }}" class="nav-link text-white @if (request()->routeIs('admin.contact-messages.*')) active @endif">
+                <i class="fas fa-envelope"></i>
+                Contactverzoeken
+            </a>
+        </li>
+        <li>
             <a href="{{ route('admin.texts.index') }}" class="nav-link text-white @if (request()->routeIs('admin.texts.*')) active @endif">
                 <i class="fas fa-text-size"></i>
                 Teksten

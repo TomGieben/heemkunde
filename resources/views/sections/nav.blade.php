@@ -24,8 +24,16 @@
                     <a class="nav-link px-2 text-muted" href="{{ route('about') }}">
                         <span class="text-dark">Over ons</span>
                     </a>
+                    <a class="nav-link px-2 text-muted" href="{{ route('contact') }}">
+                        <span class="text-dark">Contact</span>
+                    </a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+@if(Route::currentRouteName() !== 'welcome')
+    <div class="container py-2">
+        <x-bread-crumbs />
+    </div>
+@endif

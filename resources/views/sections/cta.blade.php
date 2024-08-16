@@ -9,7 +9,7 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque eos placeat ab, maxime deleniti reprehenderit veritatis enim esse culpa. Quibusdam fuga nam error rerum a, amet voluptates! Officiis, id explicabo!
                 </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="https://gildedagoeffelt.nl/programma" class="btn btn-outline-secondary btn-lg">
+                    <a class="btn btn-outline-secondary btn-lg" href="{{ route('contact') }}">
                         Neem contact op
                         <i class="fas fa-arrow-right"></i>
                     </a>

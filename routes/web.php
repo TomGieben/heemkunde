@@ -18,7 +18,7 @@ Route::get('/over-ons', [WelcomeController::class, 'about'])->name('about');
 Route::get('/contact', [WelcomeController::class, 'contact'])->name('contact');
 Route::post('/contact', [WelcomeController::class, 'storeContact'])->name('contact.store');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::middleware('auth')->prefix('admin')->as('admin.')->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');

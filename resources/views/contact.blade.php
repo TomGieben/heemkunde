@@ -46,16 +46,16 @@
                                 <ul class="list-unstyled">
                                     <li>
                                         <strong>Adres:</strong>
-                                        <p>Hoofdstraat 1, 1234 AB, Amsterdam</p>
+                                        <p>@content('address')</p>
                                     </li>
                                     <li>
                                         <strong>Telefoonnummer:</strong>
-                                        <p>06 12345678</p>
+                                        <p>@content('phone')</p>
                                     </li>
                                     <li>
                                         <strong>E-mailadres:</strong>
                                         <p>
-                                            <a href=""></a>
+                                            <a href="mailto:@content('email')">@content('email')</a>
                                         </p>
                                     </li>
                                 </ul>

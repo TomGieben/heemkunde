@@ -12,16 +12,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-12">
-                    <h2>Wie zijn wij?</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo quisquam velit laudantium tenetur! Soluta in, nisi laborum natus tempore quibusdam aut incidunt minus ad veritatis, aliquid nam quisquam explicabo.
-                    </p>
+                    <h2>@content('title-1')</h2>
+                    <p>@content('paragraph-1')</p>
                 </div>
                 <div class="col-md-6 col-12">
-                    <h2>Onze missie</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo quisquam velit laudantium tenetur! Soluta in, nisi laborum natus tempore quibusdam aut incidunt minus ad veritatis, aliquid nam quisquam explicabo.
-                    </p>
+                    <h2>@content('title-2')</h2>
+                    <p>@content('paragraph-2')</p>
                 </div>
             </div>
         </div>

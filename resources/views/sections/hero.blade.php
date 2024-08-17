@@ -6,10 +6,10 @@
             </div>
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3 text-dark">
-                    {{ config('app.name', 'Laravel') }}
+                    @content('title')
                 </h1>
                 <p class="lead  text-dark">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque eos placeat ab, maxime deleniti reprehenderit veritatis enim esse culpa. Quibusdam fuga nam error rerum a, amet voluptates! Officiis, id explicabo!
+                    @content('paragraph')
                 </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                     <a class="btn btn-outline-secondary btn-lg" href="{{ route('about') }}">

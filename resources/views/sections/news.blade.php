@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row d-flex g-3 mt-2">
             @foreach($newsArticles as $newsArticle)
-                <div class="col-md-6 col-lg-4 col-12 mx-2 mb-2">
+                <div class="col-md-6 col-lg-4 col-12 mb-2">
                     <x-news-article-card :newsArticle="$newsArticle" />
                 </div>
             @endforeach

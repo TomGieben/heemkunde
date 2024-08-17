@@ -12,7 +12,7 @@
         <div class="container">
             <div class="row">
                 @foreach ($newsArticles as $article)
-                    <div class="col-md-6 col-lg-4 col-12 mx-2 mb-2">
+                    <div class="col-md-6 col-lg-4 col-12 mb-2">
                         <x-news-article-card :newsArticle="$article" />
                     </div>
                 @endforeach

@@ -7,6 +7,16 @@
                 <h1 class="display-4">
                     {{ $article->title }}
                 </h1>
+                <small class="text-muted">
+                    <span class="me-2">
+                        <i class="fas fa-calendar"></i>
+                        {{ $article->created_at->format('d-m-Y') }}
+                    </span>
+                    <span>
+                        <i class="fas fa-user"></i>
+                        {{ $article->author->name }}
+                    </span>
+                </small>
             </div>
         </div>
         <div class="container">

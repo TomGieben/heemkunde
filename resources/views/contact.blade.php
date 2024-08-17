@@ -39,7 +39,7 @@
                     </form>
                 </div>
                 <div class="col-md-6 col-12">
-                    <div class="card">
+                    <div class="card my-4">
                         <div class="card-body">
                             <h5 class="card-title">Contactgegevens</h5>
                             <p class="card-text">

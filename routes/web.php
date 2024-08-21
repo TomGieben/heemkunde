@@ -21,6 +21,7 @@ Route::post('/contact', [WelcomeController::class, 'storeContact'])->name('conta
 Auth::routes(['register' => false]);
 
 Route::middleware('auth')->prefix('admin')->as('admin.')->group(function () {
+    Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/home', [HomeController::class, 'index'])->name('home');
    
     Route::get('/settings', [SettingController::class, 'index'])->name('settings.index');

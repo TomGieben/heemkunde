@@ -17,6 +17,10 @@ class AppServiceProvider extends ServiceProvider
         Blade::directive('content', function (string $expression): string {
             return "<?php echo App\Models\Text::render($expression); ?>";
         });
+
+        Blade::directive('honeypot', function () {
+            return "<?php echo App\Helpers\Honeypot::render(); ?>";
+        });
     }
 
     /**

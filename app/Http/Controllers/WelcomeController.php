@@ -4,9 +4,13 @@
 namespace App\Http\Controllers;
 
 use App\Helpers\Breadcrumb;
+use App\Helpers\Honeypot;
+use App\Mail\AdminMail;
 use App\Models\ContactMessage;
 use App\Models\NewsArticle;
+use App\Models\Setting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class WelcomeController extends Controller
 {
@@ -88,6 +92,12 @@ class WelcomeController extends Controller
             'email' => 'required|email',
             'message' => 'required',
         ]);
+
+        if (!Honeypot::validate($request)) {
+            $attributes['is_spam'] = true;
+        } else {
+            Mail::to(Setting::getByKey('contact_email'))->send(new AdminMail($attributes));
+        }
 
         ContactMessage::create($attributes);
 

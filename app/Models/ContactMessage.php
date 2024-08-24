@@ -14,5 +14,6 @@ class ContactMessage extends Model
         'name',
         'email',
         'message',
+        'is_spam',
     ];
 }

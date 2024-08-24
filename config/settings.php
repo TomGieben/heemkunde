@@ -9,4 +9,12 @@ return [
         'value' => '',
         'is_editable' => true,
     ],
+    [
+        'name' => 'Ontvangende e-mailadres',
+        'description' => 'Het e-mailadres waar de contactberichten naartoe worden gestuurd',
+        'type' => 'text',
+        'key' => 'contact_email',
+        'value' => '',
+        'is_editable' => true,
+    ],
 ];

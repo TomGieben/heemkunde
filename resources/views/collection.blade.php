@@ -10,11 +10,11 @@
             </div>
         </div>
         <div class="container">
-            <h2 class="mb-4">Nieuwste items</h2>
+            <h2 class="mb-4">Algemeen</h2>  
             <div class="mb-2">
                 <x-brabant-cloud url="{{ env('GENERAL_COLLECTION_URL') }}"/>
             </div>
-            <h2 class="mb-4">Populairste items</h2>
+            <h2 class="mb-4">Bidprentjes</h2>
             <div class="mb-2">
                 <x-brabant-cloud url="{{ env('PRAYER_CARDS_COLLECTION_URL') }}"/>
             </div>

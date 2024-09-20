@@ -27,11 +27,11 @@ class TextController extends Controller
     public function update(Request $request, Text $text)
     {
         $request->validate([
-            'content' => 'required',
+            'body' => 'required',
         ]);
 
         $text->update([
-            'content' => $request->content,
+            'body' => $request->content,
         ]);
 
         return redirect()->route('admin.texts.index');

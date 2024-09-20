@@ -16,7 +16,7 @@
         </div>
 
         <div class="mb-3">
-            <textarea class="form-control" id="content" name="content" rows="10">{{ old('body', $text->body) }}</textarea>
+            <textarea class="form-control" id="body" name="body" rows="10">{{ old('body', $text->body) }}</textarea>
         </div>
 
         <div class="d-flex justify-content-end">
